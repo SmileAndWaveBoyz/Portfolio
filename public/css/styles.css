@@ -22,6 +22,13 @@ body{
     overflow-x: hidden;
 }
 
+a{
+    display: block;
+    text-decoration: none;
+    color: white
+}
+
+
 .container{
     margin: 0 auto;
     position: relative;
@@ -78,7 +85,7 @@ h3{
 }
 
 .photo{
-    background-image: url("/assets/images/image-profile-mobile.png");
+    background-image: url("/public/assets/images/image-profile-mobile.png");
     background-position: center;
     background-size: cover;
     display: block;
@@ -128,6 +135,7 @@ h3{
 
 .contact{
     position: relative;
+    display: block;
 }
 
 .contact:hover{
@@ -229,7 +237,7 @@ h3{
     }
 
     .photo{
-        background-image: url("/assets/images/image-profile-tablet.png");
+        background-image: url("/public/assets/images/image-profile-tablet.png");
         background-size: cover;
         right: -0px;
         top: 0px;
@@ -264,7 +272,7 @@ h3{
 
 @media screen and (min-width: 1024px) {
     .photo{
-        background-image: url("/assets/images/image-profile-desktop.png");
+        background: url("/public/assets/images/image-profile-desktop.png");
         background-size: cover;
         right: 0px;
         top: 0px;
@@ -447,25 +455,25 @@ h3{
 }
 
 .picOne{
-    background-image: url("/assets/images/thumbnail-project-1-small.webp");
+    background-image: url("/public/assets/images/thumbnail-project-1-small.webp");
 }
 .picTwo{
-    background-image: url("/assets/images/thumbnail-project-2-small.webp");
+    background-image: url("/public/assets/images/thumbnail-project-2-small.webp");
 }
 .picThree{
-    background-image: url("/assets/images/thumbnail-project-3-small.webp");
+    background-image: url("/public/assets/images/thumbnail-project-3-small.webp");
 }
 .picFour{
-    background-image: url("/assets/images/thumbnail-project-4-small.webp");
+    background-image: url("/public/assets/images/thumbnail-project-4-small.webp");
 }
 .picFive{
-    background-image: url("/assets/images/thumbnail-project-5-small.webp");
+    background-image: url("/public/assets/images/thumbnail-project-5-small.webp");
 }
 .picSix{
-    background-image: url("/assets/images/thumbnail-project-6-small.webp");
+    background-image: url("/public/assets/images/thumbnail-project-6-small.webp");
 }
 .picSeven{
-    background-image: url("/assets/images/thumbnail-project-6-small.webp");
+    background-image: url("/public/assets/images/thumbnail-project-6-small.webp");
 }
 
 .showPicture{
@@ -534,23 +542,23 @@ h3{
     }
     
     .picOne{
-        background-image: url("/assets/images/thumbnail-project-1-large.webp");
+        background-image: url("/public/assets/images/thumbnail-project-1-large.webp");
     }
 
     .picTwo{
-        background-image: url("/assets/images/thumbnail-project-2-large.webp");
+        background-image: url("/public/assets/images/thumbnail-project-2-large.webp");
     }
     .picThree{
-        background-image: url("/assets/images/thumbnail-project-3-large.webp");
+        background-image: url("/public/assets/images/thumbnail-project-3-large.webp");
     }
     .picFour{
-        background-image: url("/assets/images/thumbnail-project-4-large.webp");
+        background-image: url("/public/assets/images/thumbnail-project-4-large.webp");
     }
     .picFive{
-        background-image: url("/assets/images/thumbnail-project-5-large.webp");
+        background-image: url("/public/assets/images/thumbnail-project-5-large.webp");
     }
     .picSix{
-        background-image: url("/assets/images/thumbnail-project-6-large.webp");
+        background-image: url("/public/assets/images/thumbnail-project-6-large.webp");
     }
 
     .view{
