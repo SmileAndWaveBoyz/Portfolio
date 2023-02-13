@@ -1,0 +1,839 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    /* outline: 1px solid white; */
+}
+html{
+    font-size: 62.5%;
+}
+
+:root {
+  --color-primary: #151515;
+  --color-secondary: #4ee1a0;
+  --color-accent: #242424;
+  --color-body: #d9d9d9;
+}
+
+body{
+    font-family: SpaceGrotesk-variable;
+    font-size: 1.8rem;   
+    line-height: 28px;
+    background-color: var(--color-primary);
+    color: var(--color-body);
+    overflow-x: hidden;
+}
+
+.container{
+    margin: 0 auto;
+    position: relative;
+    overflow-x: hidden;
+    /* max-width: 360px; */
+}
+
+h1, h2 , h3{
+    font-family: SpaceGrotesk-variable;
+    color: white;
+}
+
+/* Hero block */
+
+h1{
+    font-size: 4.1rem;
+    line-height: 40px;
+    letter-spacing: 0px;
+    text-align: center;
+    font-weight: 410;
+    padding: 0rem 0.4rem;
+    margin-bottom: 0;
+    
+}
+
+h2{
+    font-size: 4.8rem;
+    letter-spacing: -1.5px;
+    margin-left: 1.8rem;
+}
+
+h3{
+    font-size: 2.4rem;
+    line-height: 32px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.navBar{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.icon{
+    margin: 0 1rem;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.photo{
+    background-image: url("/assets/images/image-profile-mobile.png");
+    background-position: center;
+    background-size: cover;
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 437px;
+    position: relative;
+    top: -105px;
+    margin-bottom: -9rem;
+}
+
+.leadPar{
+    padding: 1rem 0.7rem;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.contact{
+    text-align: center;
+    margin-top: 1.8rem;
+    font-weight: 700;
+    font-size: 1.7rem;
+    font-family: SpaceGrotesk-bold;
+}
+
+.underline{
+    position: relative;
+}
+
+.underline:after {
+    position: absolute;
+    height: 5px;
+    margin: 0 auto;
+    content: '';
+    left: 0;
+    right: 0;
+    width: 95%;
+    color: #000;
+    background-color: #4ee1a0;
+    bottom: 1px; /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+}
+
+.break{
+    display: inline;
+}
+
+.contact{
+    position: relative;
+}
+
+.contact:hover{
+    color: #4ee1a0;
+}
+
+.contact:after {
+    position: absolute;
+    height: 3px;
+    margin: 0 auto;
+    content: '';
+    left: 30px;
+    right: 0px;
+    width: 34%;
+    color: #000;
+    background-color: #4ee1a0;
+    bottom: -6px; /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+}
+
+.line{
+    background-color: white;
+    height: 1px;
+    margin: 8rem auto;
+    margin-bottom: 2rem;
+    width: 90%;
+}
+
+.circle{
+    position: absolute;
+    top: 306px;
+    left: 220px;
+}
+
+.rings{
+    position: absolute;
+    top: 160px;
+    left: -350px;
+    z-index: -2;
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+        max-width: 745px;
+        overflow: visible;
+        /* outline: 1px solid white; */
+    }
+
+    h1{
+        text-align: left;
+        font-size: 7.4rem;
+        line-height: 75px;
+        font-weight: 600;
+        width: 540px;
+        /* outline: 1px solid white; */
+        margin-bottom: 6rem;
+    }
+
+    .break{
+        display: block;
+    }
+
+    .leadPar{
+        text-align: left;
+        width: 430px;
+        font-size: 1.81rem;
+    }
+
+    .contact{
+        text-align: left;
+        margin: 0rem 1rem;
+    }
+
+    .contact:after {
+        left: -600px;
+        right: 0px;
+        width: 18%;
+        color: #000;
+        background-color: #4ee1a0;
+        bottom: -6px; /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+    }
+
+    .underline:after {
+        height: 6px;
+        width: 99%;
+        bottom: 5px; /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+    }
+
+    .navBar{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1;
+        margin-bottom: 6rem;
+    }
+
+    .title{
+        font-size: 3.2rem;
+    }
+
+    .photo{
+        background-image: url("/assets/images/image-profile-tablet.png");
+        background-size: cover;
+        right: -0px;
+        top: 0px;
+        height: 600px;
+        width: 323px;
+        position: absolute;
+        z-index: -1;
+        overflow: hidden;
+    }
+
+    .icon{
+        margin: 0 1.6rem;
+        z-index: 1;
+    }
+
+    .circle{
+        position: absolute;
+        top: 470px;
+        left: 250px;
+    }
+
+    .line{
+        margin: 6rem 0;
+        width: 100%;
+    }
+
+    .rings{
+        top: 90px;
+        left: -290px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .photo{
+        background-image: url("/assets/images/image-profile-desktop.png");
+        background-size: cover;
+        right: 0px;
+        top: 0px;
+        height: 715px;
+        width: 445px;
+        position: absolute;
+        z-index: -1;
+        overflow:visible
+    }
+
+    .break{
+        display: inline;
+    }
+
+    .container{
+        max-width: 1110px;
+        margin: 0 auto;
+        overflow: visible;
+
+    }
+
+    .line{
+        margin-top: 22rem;
+        width: 100%;
+    }
+
+    .contact{
+        margin-top: 7rem;
+        transition: all 0.2s;
+        cursor: pointer;
+    }
+
+    .contact:after {
+        left: -960px;
+        right: 0px;
+        width: 12%;
+        color: #000;
+        background-color: #4ee1a0;
+        bottom: -6px; /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+    }
+
+    h1{
+        width: 750px;
+        font-size: 8.7rem;
+    }
+
+    .circle{
+        top: 506px;
+        left: -60px;
+    }
+}
+
+/* Experience block */
+
+.experienceGrid{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    /* outline: 1px solid white; */
+    position: relative;
+}
+
+.topics{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.topicHeading{
+    font-size: 4.4rem;
+    letter-spacing: -1.5px;
+    font-family: SpaceGrotesk-variable;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.line.lineTwo{
+    margin-top: 2rem;
+    margin-bottom: 8.2rem;
+}
+
+.ringsTwo{
+    position: absolute;
+    top: 0;
+    right: -340px;
+}
+
+.filler{
+    position: absolute;
+    top: 1600px;
+    width: 100vw;
+    height: 200px;
+    /* outline: 1px solid rgb(122, 43, 43); */
+    overflow-x: hidden;
+}
+
+@media screen and (min-width: 768px) {
+    .experienceGrid{
+        grid-template-columns: 1fr 1fr;
+        overflow-x: hidden;
+    }
+
+    .line.lineTwo{
+        display: none;
+    }
+
+    .ringsTwo{
+        top: 0px;
+        right: -360px;
+    }
+
+    .filler{
+        top: 1040px;
+        width: 100vw;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .ringsTwo{
+        top: 0px;
+        right: 0px;
+    }
+
+    .filler{
+        top: 1150px;
+        width: 1500px;
+        height: 200px;
+    }
+}
+
+/* Projects block */
+.projectsHeading{
+    margin-top: 10rem;
+    margin-bottom: 5.5rem;
+}
+
+.projects{
+    display: inline;
+    margin-bottom: 6rem;
+}
+
+.contactTwo{
+    display: inline;
+    font-weight: 800;
+    font-size: 1.9rem;
+    font-family: SpaceGrotesk-variable;
+    float: right;
+    margin-right: 4rem;
+    cursor: pointer;
+    transform: translate(0, -23px);
+    
+}
+
+.contactTwo:after {
+    position: absolute;
+    height: 3px;
+    margin: 0 auto;
+    content: '';
+    right: -22px;
+    bottom: -15px; /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+    width: 135px;
+    color: #000;
+    background-color: #4ee1a0;
+    
+}
+
+.contactTwo:hover{
+    color: #4ee1a0;
+}
+
+.showGrid{
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 348px; 
+    /* outline: 1px solid white; */
+}
+
+.picOne{
+    background-image: url("/assets/images/thumbnail-project-1-small.webp");
+}
+.picTwo{
+    background-image: url("/assets/images/thumbnail-project-2-small.webp");
+}
+.picThree{
+    background-image: url("/assets/images/thumbnail-project-3-small.webp");
+}
+.picFour{
+    background-image: url("/assets/images/thumbnail-project-4-small.webp");
+}
+.picFive{
+    background-image: url("/assets/images/thumbnail-project-5-small.webp");
+}
+.picSix{
+    background-image: url("/assets/images/thumbnail-project-6-small.webp");
+}
+.picSeven{
+    background-image: url("/assets/images/thumbnail-project-6-small.webp");
+}
+
+.showPicture{
+    background-size: cover;
+    width: 336px;
+    height: 196px;
+    margin: 2rem auto;
+    padding: 1px;
+}
+
+.subjects{
+    display: inline;
+    margin-right: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+.these{
+    margin-bottom: 2rem;
+}
+
+.view{
+    display: inline;
+    color: white;
+    margin-right: 5rem;
+    cursor: pointer;
+}
+
+.view:hover{
+    color: #4ee1a0;
+}
+
+.underlineSmall{
+    position: relative;
+}
+
+.underlineSmall:after {
+    position: absolute;
+    height: 3px;
+    margin: 0 auto;
+    content: '';
+    left: 0px;
+    bottom: -5px; 
+    width: 120%;
+    color: #000;
+    background-color: #4ee1a0;
+}
+
+.view{
+    font-size: 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+    .showGrid{
+        align-items: center;
+        justify-content: left;
+        width: 720px; 
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        /* outline: 1px solid white; */
+    }
+
+    .showPicture{
+        width: 341px;
+        height: 253px;
+        margin-left: 0;
+    }
+    
+    .picOne{
+        background-image: url("/assets/images/thumbnail-project-1-large.webp");
+    }
+
+    .picTwo{
+        background-image: url("/assets/images/thumbnail-project-2-large.webp");
+    }
+    .picThree{
+        background-image: url("/assets/images/thumbnail-project-3-large.webp");
+    }
+    .picFour{
+        background-image: url("/assets/images/thumbnail-project-4-large.webp");
+    }
+    .picFive{
+        background-image: url("/assets/images/thumbnail-project-5-large.webp");
+    }
+    .picSix{
+        background-image: url("/assets/images/thumbnail-project-6-large.webp");
+    }
+
+    .view{
+        font-size: 1.8rem;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .showGrid{
+        width: 1110px; 
+        gap: 30px;
+        /* outline: 1px solid white; */
+    }
+    .showPicture{
+        width: 540px;
+        height: 400px;
+        margin-left: 0;
+    }
+
+    .slot{
+        position: relative;
+    }
+
+    .blackBox{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0, 0.0);
+        transition: 0.3s all;
+        /* display: none; */
+    }
+
+    .slot:hover .blackBox{
+        background-color: rgb(0, 0, 0, 0.8);
+    }
+
+    .buttons{
+        position: absolute;
+        top: 150px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        visibility: hidden;
+    }
+
+    
+    .slot:hover .buttons{
+        visibility: visible;
+    }
+
+    .view.underlineSmall{
+        display: block;
+        text-decoration: none;
+    }
+
+    .projectsHeading{
+        margin-bottom: 7rem;
+        position: relative;
+    }
+
+    .projects{
+        margin-left: 0;
+    }
+
+    .contactTwo{
+        margin-right: 2rem;
+    }
+}
+
+
+/* Contact block */
+.lastHeader{
+    text-align: center;
+    padding-top: 6.2rem;
+}
+
+.endPar{
+    text-align: center;
+}
+
+.contactBlockContainer{
+    position: relative;
+    margin: 0 auto;
+    background-color: var(--color-accent);
+    height: 835px;
+    margin: 0 auto;
+}
+
+.contactBlock{
+    width: 348px; 
+    margin: 0 auto;
+}
+
+.sendMessageContainer{
+    width: 100%;
+}
+
+.view.underlineSmall{
+    float: right;
+}
+
+.iconContainerTwo{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    width: 100%;
+}
+
+.form-control{
+    position: relative;
+}
+
+input, textarea{
+    background-color: var(--color-accent);
+    border: 0;
+    display: block;
+    border-bottom: 1px solid white;
+    width: 100%;
+    margin-bottom: 3.2rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+input, textarea{
+    color: #aaaaaa;
+    font-weight: 500;
+    resize: none;
+    outline: 0;
+}
+
+#errorNameElement, #errorEmailElement, #errorMessageElement{
+    position: absolute;
+    right: 0px;
+    font-size: 1.2rem;
+    color: #ea6755;
+    transform: translate(0, -30px);
+}
+
+.fa-circle-exclamation{
+    color: #ea6755;
+    position: absolute;
+    right: 0px;
+    bottom: 17px;
+    visibility: hidden;
+}
+
+.fa-circle-exclamation.visable{
+    visibility: visible;
+}
+
+textarea.error, input.error{
+    border-bottom: 1px solid #ea6755;
+}
+
+textarea:hover, input:hover{
+    border: 0;
+    outline: 0;
+    color: white;
+    border-bottom: 1px solid white; 
+    border-color: var(--color-secondary); 
+}
+
+.submitButtonContainer{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    height: 20px;
+}
+
+.submitButton{
+    display: block;
+    background-color: var(--color-accent);
+    border: 0;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    font-family: SpaceGrotesk-variable;
+    font-size: 1.8rem;   
+    margin: 3rem 2rem;
+    transition: 0.2s all;
+    cursor: pointer;
+}
+
+.submitButton:hover{
+    color: var(--color-secondary);
+}
+
+.lineThree{
+    background-color: white;
+    height: 1px;
+    margin: 8rem auto;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.ringsThree{
+    position: absolute;
+    top: 545px;
+    right: 190px;
+}
+
+@media screen and (min-width: 768px) {
+    .lastHeader{
+        font-size: 7.2rem;
+    }
+
+    .lineThree{
+        width: 90%;
+    }
+
+    .ringsThree{
+        top: 470px;
+        right: 600px;
+    }
+
+    footer{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contactBlockContainer{
+        height: 672px;
+    }
+    .contactBlock{
+        padding-top: 9rem;
+        margin-top: 9rem;
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr 1fr;
+        /* outline: 1px solid wheat; */
+        width: 1110px; 
+    }
+
+    
+
+    .lastHeader{
+        padding-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .contactBlockContainer:before {
+        content: ""; 
+        position: absolute;
+        left: -50vw;
+        right: -50vw;
+        top: -0; 
+        bottom: 0%;
+        background-color: var(--color-accent);
+        z-index: -1;
+    } 
+
+    .contactText{
+        margin-top: 0;
+        /* outline: 1px solid white; */
+    }
+
+    .endPar, .lastHeader{
+        text-align: left;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .lineThree{
+        margin-top: 15.7rem;
+        width: 1110px;
+    }
+
+    .ringsThree{
+        top: -200px;
+        left: -300px;
+    }
+
+    footer{
+        position: relative;
+        width: 1110px; 
+    }
+}
