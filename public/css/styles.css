@@ -85,7 +85,7 @@ h3{
 }
 
 .photo{
-    background-image: url("/public/assets/images/image-profile-mobile.png");
+    background-image: url("/public/assets/images/image-profile-mobile.webp");
     background-position: center;
     background-size: cover;
     display: block;
@@ -237,7 +237,7 @@ h3{
     }
 
     .photo{
-        background-image: url("/public/assets/images/image-profile-tablet.png");
+        background-image: url("/public/assets/images/image-profile-tablet.webp");
         background-size: cover;
         right: -0px;
         top: 0px;
@@ -272,7 +272,7 @@ h3{
 
 @media screen and (min-width: 1024px) {
     .photo{
-        background: url("/public/assets/images/image-profile-desktop.png");
+        background: url("/public/assets/images/image-profile-desktop.webp");
         background-size: cover;
         right: 0px;
         top: 0px;
